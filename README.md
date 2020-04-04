@@ -61,3 +61,8 @@ Run `test.py -weights_path checkpoints/latest.pt` to validate against the latest
 # Contact
 
 For questions or comments please contact Glenn Jocher at glenn.jocher@ultralytics.com or visit us at http://www.ultralytics.com/contact
+# 可视化
+1）	pip install tensorboard （注，原来需要tf，现在不安装也ok2）
+2）from torch.utils.tensorboard import SummaryWriter       
+writer = SummaryWriter(PATH_to_log_dir)
+3）bash：tensorboard --logdir=/path_to_log_dir/ --port 6006
